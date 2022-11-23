@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    android:background="#F4F5EF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sigle_card_view"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+    <ImageView
+        android:id="@+id/image_id"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentStart="true"
+
+        android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensaucesans_bold"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/image_id"
+            android:text="name" />
+
+
+        <TextView
+            android:id="@+id/price_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_id"
+            android:text="price"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_toEndOf="@+id/image_id"
+            android:layout_marginStart="30dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

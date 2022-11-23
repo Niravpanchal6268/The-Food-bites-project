@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wallet_F">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wallet"
+        android:textSize="25sp"
+        android:fontFamily="@font/opensaucesans_bold"
+        android:layout_margin="20dp"
+        android:textColor="@color/brown"
+
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/wallet_c"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edition Wallet"
+        android:fontFamily="@font/opensaucesans_bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:text="Seamless one-click checkout for all payments on Zomato"
+        android:textSize="15sp"
+        android:fontFamily="@font/opensaucesans_bold"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/button_e"
+        android:text="Activate Wallet"
+        android:textSize="18sp"
+        android:elevation="25dp"
+        android:fontFamily="@font/opensaucesans_bold"
+        />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:padding="10dp"
+       >
+
+       <ImageView
+           android:id="@+id/thunder_oclick_id"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:src="@drawable/onclick"
+           />
+       <TextView
+           android:id="@+id/oneclick_checkout_id"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="One Click Checkout"
+           android:textSize="20dp"
+           android:fontFamily="@font/opensaucesans_bold"
+           android:textColor="@color/black"
+           android:layout_toRightOf="@id/thunder_oclick_id"
+           android:paddingLeft="25dp"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No need to wait for OTPs - payments get processed instantly"
+            android:textSize="15sp"
+            android:fontFamily="@font/opensaucesans_bold"
+            android:layout_below="@id/oneclick_checkout_id"
+            android:layout_toRightOf="@+id/thunder_oclick_id"
+            android:paddingLeft="25dp"
+            />
+
+
+
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/safe_and_secure_img_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/safe_secure_imge"
+            />
+        <TextView
+            android:id="@+id/safe_secure_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safe and secure"
+            android:textSize="20dp"
+            android:fontFamily="@font/opensaucesans_bold"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/safe_and_secure_img_id"
+            android:paddingLeft="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stay protected with bank - grade security while making payments"
+            android:textSize="15sp"
+            android:fontFamily="@font/opensaucesans_bold"
+            android:layout_below="@id/safe_secure_text_id"
+            android:layout_toRightOf="@+id/safe_and_secure_img_id"
+            android:paddingLeft="25dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+</FrameLayout>

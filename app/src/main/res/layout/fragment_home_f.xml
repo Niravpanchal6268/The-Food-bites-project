@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reletive_home_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_f">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/enjoy_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/indigo_daisy"
+            android:text="Find the Best"
+            android:textColor="@color/green"
+            android:textSize="45sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/morning_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enjoy_text_id"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/indigo_daisy"
+            android:text="Food"
+            android:textColor="@color/brown"
+            android:textSize="40sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@+id/morning_text_id"
+            android:fontFamily="@font/indigo_daisy"
+            android:text="Outlate"
+            android:textColor="@color/green"
+            android:textSize="40sp" />
+
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_baseline_notifications_none_24" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/serarch_input_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/morning_text_id"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+
+            <SearchView
+                android:id="@+id/search_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edi_text"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search outlate/food"
+
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_button_scoll_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/serarch_input_id"
+            android:layout_marginTop="3dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_e"
+                    android:text="Nature"
+
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_e"
+                    android:text="Clssic"
+
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_e"
+                    android:text="Deluxe"
+
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_e"
+                    android:text="Deluxe"
+
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_e"
+                    android:text="luxury"
+
+                    />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:id="@+id/home_scroll_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontal_button_scoll_id">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/diwali_text_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/opensaucesans_bold"
+                    android:text="Check these out!"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/diwali_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/diwali_text_id"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        android:background="@drawable/d">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="This Diwali"
+                            android:textSize="35sp"
+                            android:fontFamily="@font/opensaucesans_bold"
+                            android:textColor="@color/white"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Order deliciouse food"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="with great offers"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            app:drawableEndCompat="@drawable/ic_baseline_arrow_circle_right_24" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/nearby_text_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/diwali_card_view"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/opensaucesans_bold"
+                    android:text="Nearby Place"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/n_see_all_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/diwali_card_view"
+                    android:fontFamily="@font/opensaucesans_bold"
+                    android:gravity="end"
+                    android:padding="10dp"
+                    android:text="See all"
+                    android:textSize="15sp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/location_recyclerview_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nearby_text_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="horizontal" />
+
+                <TextView
+                    android:id="@+id/special_text_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location_recyclerview_id"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/opensaucesans_bold"
+                    android:text="Special for You"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/s_see_all_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location_recyclerview_id"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/opensaucesans_bold"
+                    android:padding="10dp"
+                    android:text="See all"
+                    android:textSize="15sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/special_text_id"
+                    android:layout_marginTop="10dp" />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

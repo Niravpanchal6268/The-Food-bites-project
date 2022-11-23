@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_fragments_id"
+    tools:context=".login_in_F">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/login_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lobster_regular"
+            android:paddingStart="30dp"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:text="Login In"
+            android:textSize="40sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_L_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:placeholderText="user11@gmail.com">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/email_E_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edi_text"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Password_L_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:placeholderText="*********">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/password_E_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edi_text"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/forgate_password_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Forgate  password ?"
+                android:textColor="@color/brown" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/login_btn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button_e"
+            android:text="Login"
+            android:textAllCaps="false"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="arrow_imag"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/swap_id"
+            android:text="Swap to Sign up"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+</FrameLayout>

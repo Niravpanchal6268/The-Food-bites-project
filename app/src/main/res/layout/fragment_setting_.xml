@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".setting_F">
+
+
+    <TextView
+        android:id="@+id/text_setting_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/opensaucesans_bold"
+        android:textColor="@color/brown"
+        />
+
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/android_image"
+            android:layout_gravity="center"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="25dp"
+            />
+        <TextView
+            android:id="@+id/user_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android "
+            android:gravity="center"
+            android:fontFamily="@font/opensaucesans_bold"
+            android:textSize="25sp"
+            />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="android05@gmail.com"
+             android:gravity="center"
+             android:textSize="15sp"
+             android:fontFamily="@font/opensaucesans_bold"
+             android:textColor="@color/black"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:fontFamily="@font/opensaucesans_bold"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="40dp"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="30dp"
+            app:drawableLeftCompat="@drawable/ic_baseline_person_24"
+            app:drawableRightCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensaucesans_bold"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="40dp"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="30dp"
+            app:drawableRightCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+            app:drawableLeftCompat="@drawable/ic_baseline_lock_reset_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:drawableStart="@drawable/ic_baseline_notifications_none_24"
+            android:padding="15dp"
+            android:drawablePadding="40dp"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensaucesans_bold"
+            android:layout_marginHorizontal="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regional"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Language"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensaucesans_bold"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="40dp"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="30dp"
+            app:drawableRightCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+            app:drawableLeftCompat="@drawable/ic_baseline_language_24" />
+        <TextView
+            android:id="@+id/log_out_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensaucesans_bold"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="40dp"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="30dp"
+            app:drawableLeftCompat="@drawable/ic_baseline_logout_24"
+            app:drawableRightCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="App Version 1.0.1"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+</FrameLayout>
